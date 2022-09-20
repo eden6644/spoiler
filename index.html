@@ -9,10 +9,18 @@
 </head>
 <style>
     .spoiler-content{
-        display: none;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 1s;
     }
     .spoiler-content.visible{
-        display: block;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        opacity: 1;
     }
 </style>
 <body>
@@ -22,7 +30,7 @@
     </p>
     <p class="spoiler">
         <button>Afficher spoiler</button>
-        <span class="s poiler-content">j'irais au Ciel avec Jesus</span>
+        <span class="spoiler-content">j'irais au Ciel avec Jesus</span>
     </p>
     <p>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eaque iure assumenda aliquam, a numquam, repellat animi non id itaque, quaerat debitis provident ex exercitationem rerum eligendi ratione quidem molestiae.</span>

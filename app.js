@@ -7,3 +7,7 @@
 var btS = document.querySelector('.spoiler button')
 
 //detection du clique
+btS.addEventListener('click', function(){
+  this.nextElementSibling.classList.add('visible')
+  this.parentNode.removeChild(this)
+})
