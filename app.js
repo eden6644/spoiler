@@ -19,6 +19,10 @@ let createSpoilerbtn = function(element){
   let btnS = document.createElement('button')
   btnS.textContent = "Attention Spoiler"
   element.appendChild(btnS)
+
+  let spanSpoilerContent = document.createElement('span')
+  spanSpoilerContent.className = "spoiler-content"
+  spanSpoilerContent.textContent = spoilers.textContent
 }
 for (let i = 0; i < spoilers.length; i++) {
   createSpoilerbtn(spoilers[i])
